@@ -6,7 +6,7 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: brown;
+    background-color: rgb(187, 56, 56);
     color: aliceblue;
 }
 .firework-container{
@@ -18,11 +18,11 @@ body{
 }
 .firework{
     position: absolute;
-    width: 12px;
-    height: 12px;
-    background-color: burlywood;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(168, 142, 142);
     border-radius: 50%;
-    animation: explode 1s forwards;
+    animation: explode 2s forwards;
 }
 
 @keyframes explode{
