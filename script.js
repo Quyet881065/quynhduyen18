@@ -1,17 +1,17 @@
-document.addEventListener('DOMContentLoaded', function(){
-    const fireworkContainer = document.querySelector('.firework-container')
-    function createFirework(){
-        const firework = document.createElement('div');
-        firework.className = 'firework';
-        const posX = Math.random() * window.innerWidth;
-        const posY = Math.random() * window.innerHeight;
-        firework.style.left = `${posX}px`;
-        firework.style.top = `${posY}px`;
+// Get the name element
+const nameElement = document.getElementById('name');
+const containerElement = document.querySelector('.container');
 
-        fireworkContainer.appendChild(firework);
-    }
-    function lauchFirework(){
-        setInterval(createFirework, 1);
-    }
-    lauchFirework();
-})
+// Assuming you have a way to get the birthday person's name (e.g., from user input)
+const name = "Quỳnh Duyên"; // Replace with the actual name
+
+// Set the name in the element
+nameElement.textContent = name;
+
+// Add event listener for the play button (add functionality to play music here)
+const playButton = document.getElementById('play-button');
+const displayContainer2 = document.querySelector('.container2');
+playButton.addEventListener('click', () => {
+    containerElement.style = "display :none";
+     displayContainer2.style = "display : block";
+});
